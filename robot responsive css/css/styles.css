@@ -1,0 +1,213 @@
+body {
+ height: 100%;
+ margin: 0;
+ padding: 0;       
+}    
+    
+.yeuxg{
+    width: 3vh; 
+    height: 3vh; 
+    background-color: grey;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
+    left: 27%;
+    top: 23%;
+    animation: 0.9s;
+    animation-name: cligne;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cligne{
+    from {
+        opacity: 1;
+        height: 0.2vh;
+        transform: translate(-0.3vh);
+          }
+        
+    to {
+        height: 3vh;
+        
+          }  
+}
+
+.yeuxd{
+    width: 3vh; 
+    height: 3vh; 
+    background-color:grey;
+    position: absolute;
+    border-radius: 50px;
+    z-index: 1;
+    right: 27%;
+    top: 23%;
+    animation: 0.9s;
+    animation-name: cligne;
+    animation-duration 3s;
+    animation-iteration-count: infinite;
+ }
+
+#carre { 
+    width: 23vh; 
+    height: 20vh; 
+    background:white; 
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+header {
+    background-color: gainsboro;
+    display : flex;
+    justify-content: center;
+    height: 20vh;
+}
+
+#levre{
+    width: 6vh; 
+    height: 0.8vh; 
+    background: rgb(128, 50, 180); 
+    position:absolute;
+    top: 60%;
+    left: 37%;
+    z-index: 1;
+}
+.commissureg{
+    width: 0.5vh; 
+    height: 0.8vh; 
+    background: red; 
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    z-index: 1;
+    padding: 0;
+}
+
+.commissured{
+    width: 0.5vh; 
+    height: 0.8vh; 
+    background: red; 
+    position: absolute;
+    top: 60%;
+    right: 35%;
+    z-index: 1;
+    padding: 0;
+}
+
+
+#container_cou{
+    background-color: rgb(206, 204, 204);
+    display : flex;
+    justify-content: center;
+    height: 3vh;
+}
+
+#cou{
+    width: 6vh; 
+    height: 3vh; 
+    background:rgb(175, 241, 88); 
+    margin: auto;
+
+}
+
+#container_corps{
+    background-color: rgb(173, 170, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+#brasg{
+    width: 8vh; 
+    height: 40vh; 
+    margin-right: 0.5%;
+    background:rgb(248, 252, 42); 
+    transition: all 0.3s linear;
+}
+
+#corps{
+    width: 25vh; 
+    height: 40vh; 
+    background:rgb(228, 13, 199); 
+}
+
+#brasd{
+    width: 8vh; 
+    height: 40vh;
+    margin-left: 0.5%;
+    background:rgb(248, 252, 42);
+
+}
+#brasg:hover {
+    transform-origin: 8vh 0;
+    transform: rotate(45deg);
+}
+
+@keyframes rotatedroite {
+    from {
+      transform-origin: right bottom;
+      transform: rotate3d(0, 0, 1, -90deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform-origin: right bottom;
+      transform: rotate3d(0, 0, 0);
+      /*transform: translate(10px, 0, 0);*/
+      opacity: 1;
+    }
+  }
+
+#jambe{
+    background-color: rgb(134, 133, 133);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+
+#jambeg{
+    width: 10vh; 
+    height: 30vh; 
+    margin-right: 0.5%;
+    background:rgb(13, 214, 228); 
+
+}
+
+#jambed{
+    width: 10vh; 
+    height: 30vh; 
+    margin-left: 0.5%;
+    background:rgb(13, 214, 228); 
+    z-index: 1;
+}
+
+#pied{
+    background-color: rgb(134, 133, 133);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+}
+
+#fond{
+    background-color: rgb(134, 133, 133);
+    text-align: center;
+    height: 1.5vh;
+}
+
+#piedg{
+    width: 10vh; 
+    height: 4vh; 
+    margin-right: 0.5%;
+    background:rgb(240, 3, 3); 
+
+}
+
+#piedd{
+    width: 10vh; 
+    height: 4vh; 
+    margin-left: 0.5%;
+    background:rgb(240, 3, 3); 
+
+}
