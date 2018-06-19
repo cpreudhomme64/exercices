@@ -1,0 +1,24 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(185, 184, 184);
+        }
+p{
+    color: white;
+    position: fixed;
+    font-size: 3em;
+    right: 60vh;
+    top: 30vh;
+
+}
+video {
+    margin: auto;
+    border:2px solid black;
+}
+
+#container{
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+}
