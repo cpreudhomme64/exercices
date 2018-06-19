@@ -1,0 +1,38 @@
+body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #6090EA;
+	width: 100%;
+	height: 20vh;
+
+}
+
+nav {
+	background-color: #506FA8;
+	width: 100%;
+	height: 10vh;
+}
+
+section {
+	background-color: #1D2639;
+	height: 70vh;
+}
+
+section aside {
+	background-color: #6090EA;
+	height: 100%;
+	width: 90%;
+}
+
+
+footer {
+	background-color: #0E3635;
+	width: 100%;
+	height: 10vh;
+	position: absolute;
+	bottom: 0;
+}
