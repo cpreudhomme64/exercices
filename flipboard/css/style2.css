@@ -1,0 +1,39 @@
+
+body {
+    background-color: rgb(70, 68, 68);
+}
+section {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.card {
+    position: relative;
+    width: 300px; height: 450px;
+    perspective: 1000px;
+    margin: auto;
+  }
+
+
+  .front, .back {
+    position: absolute;
+    width: 250px; height: 302px;
+    transition: transform 1s;
+    backface-visibility:hidden;
+  }
+
+
+
+
+  .back { 
+    background-color: #dd8800; 
+    font-size: 3em;
+    transform: rotateY(180deg); 
+  }
+
+
+  .card:hover .front{ transform: rotateY(180deg); }
+  .card:hover .back { transform: rotateY(360deg); }
