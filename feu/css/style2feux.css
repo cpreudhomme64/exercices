@@ -1,0 +1,179 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: rgb(51, 50, 50);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#feu {
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+}
+
+#feu2 {
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+}
+
+
+#feurouge {
+    height: 15%;
+    width: 17%;
+    border-radius: 50%;
+    background-color: rgb(61, 8, 8);
+    margin: auto;
+    animation: sequencefeurouge 8s step-start;
+    animation-delay: 5s;
+}
+
+#feurouge2 {
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    background-color: rgb(61, 8, 8);
+    margin: auto;
+    margin-right: 20%;
+    animation: sequencefeurouge2 6s step-start;
+    animation-delay: 0s;
+}
+#feuorange {
+    height: 15%;
+    width: 17%;
+    border-radius: 50%;
+    background-color: rgb(58, 44, 4);
+    margin: auto;
+    animation: sequencefeuorange 4s step-start;
+    animation-delay: 3s;
+}
+
+
+#feuorange2 {
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    background-color: rgb(58, 44, 4);
+    margin: auto;
+    margin-right: 20%;
+    animation: sequencefeuorange2 6s step-start;
+    animation-delay: 3s;
+}
+
+#feuvert {
+    height: 15%;
+    width: 17%;
+    border-radius: 50%;
+    background-color: rgb(13, 59, 4);
+    margin: auto;
+    animation: sequencefeuvert 6s step-start;
+}
+#feuvert2 {
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    background-color: rgb(13, 59, 4);
+    margin: auto;
+    margin-right: 20%;
+    animation: sequencefeuvert2 6s step-start;
+    animation-delay: 6s;
+}
+
+
+
+/*---------au survol de la souris-----------*/
+
+#feurouge:hover {
+    background-color: red;
+}
+
+#feuorange:hover {
+    background-color: rgb(243, 182, 16);
+}
+
+#feuvert:hover {
+    background-color: rgb(46, 218, 12);
+}
+
+@keyframes sequencefeuvert{
+    from {
+        background-color: rgb(46, 218, 12);
+    }
+    50% {
+        background-color: rgb(46, 218, 12);
+    }
+    to {
+        background-color: rgb(13, 59, 4);
+    }
+}
+
+@keyframes sequencefeuorange{
+    from {
+        background-color: rgb(243, 182, 16);
+    }
+    50% {
+        background-color: rgb(243, 182, 16);
+    }
+    to {
+        background-color: rgb(58, 44, 4);
+    }
+}
+
+@keyframes sequencefeurouge {
+    from {
+        background-color: red;
+    }
+    50% {
+        background-color: red;
+    }
+    to {
+        background-color: rgb(61, 8, 8);
+    }
+}
+
+@keyframes sequencefeuvert2{
+    from {
+        background-color: rgb(46, 218, 12);
+    }
+    50% {
+        background-color: rgb(46, 218, 12);
+    }
+    to {
+        background-color: rgb(13, 59, 4);
+    }
+}
+
+@keyframes sequencefeuorange2{
+    from {
+        background-color: rgb(243, 182, 16);
+    }
+    50% {
+        background-color: rgb(243, 182, 16);
+    }
+    to {
+        background-color: rgb(58, 44, 4);
+    }
+}
+
+@keyframes sequencefeurouge2 {
+    from {
+        background-color: red;
+    }
+    50% {
+        background-color: red;
+    }
+    to {
+        background-color: rgb(61, 8, 8);
+    }
+}
+

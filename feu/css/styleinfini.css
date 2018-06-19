@@ -1,0 +1,249 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: rgb(51, 50, 50);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#feu {
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+}
+
+#feu2 {
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+}
+
+
+#feurouge {
+    height: 15%;
+    width: 17%;
+    border-radius: 50%;
+    background-color: rgb(61, 8, 8);
+    margin: auto;
+    animation: sequencefeurouge 15s step-start;
+    animation-iteration-count: infinite;
+}
+
+#feurouge2 {
+    height: 15%;
+    width: 17%;
+    border-radius: 50%;
+    background-color: rgb(61, 8, 8);
+    margin: auto;
+    margin-right: 20%;
+    animation: sequencefeurouge2 15s step-start;
+    animation-iteration-count: infinite;
+
+}
+
+#feuorange {
+    height: 15%;
+    width: 17%;
+    border-radius: 50%;
+    background-color: rgb(58, 44, 4);
+    margin: auto;
+    animation: sequencefeuorange 15s step-start;
+    animation-iteration-count: infinite;
+}
+
+
+#feuorange2 {
+    height: 15%;
+    width: 17%;
+    border-radius: 50%;
+    background-color: rgb(58, 44, 4);
+    margin: auto;
+    margin-right: 20%;
+    animation: sequencefeuorange2 15s step-start;
+    animation-iteration-count: infinite;
+}
+
+#feuvert {
+    height: 15%;
+    width: 17%;
+    border-radius: 50%;
+    background-color: rgb(13, 59, 4);
+    margin: auto;
+    animation: sequencefeuvert 15s step-start;
+    animation-iteration-count: infinite;
+}
+
+#feuvert2 {
+    height: 15%;
+    width: 17%;
+    border-radius: 50%;
+    background-color: rgb(13, 59, 4);
+    margin: auto;
+    margin-right: 20%;
+    animation: sequencefeuvert2 15s step-start;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes sequencefeuvert{
+    0%{
+        background-color: rgb(46, 218, 12);
+    }
+    20% {
+        background-color: rgb(46, 218, 12);
+    } 
+    30% {
+        background-color: rgb(13, 59, 4);
+    } 
+    50% {
+        background-color: rgb(13, 59, 4);
+    }
+    70% {
+        background-color: rgb(13, 59, 4);
+    }
+    90% {
+        background-color:rgb(13, 59, 4);
+    }
+    100% {
+        background-color: rgb(13, 59, 4);
+    }
+}
+
+@keyframes sequencefeuorange{
+
+    0% {
+        background-color: rgb(58, 44, 4);
+    }
+    20% {
+        background-color: rgb(58, 44, 4);
+    } 
+    30% {
+        background-color: rgb(243, 182, 16);
+    } 
+    40% {
+        background-color: rgb(58, 44, 4);
+    }
+    70% {
+        background-color: rgb(58, 44, 4);
+    }
+    90% {
+        background-color:rgb(58, 44, 4);
+    }
+    100% {
+        background-color: rgb(58, 44, 4);
+    }
+}
+
+
+
+@keyframes sequencefeurouge {
+    0% {
+        background-color: rgb(61, 8, 8);
+    }
+    20% {
+        background-color: rgb(61, 8, 8);
+    } 
+    30% {
+        background-color: rgb(61, 8, 8);
+    } 
+    67% {
+        background-color: red;
+    }
+    70% {
+        background-color: red;
+    }
+    95% {
+        background-color:red;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+
+
+@keyframes sequencefeuvert2{
+    0% {
+        background-color: rgb(13, 59, 4);
+    }
+    20% {
+        background-color: rgb(13, 59, 4);
+    } 
+    30% {
+        background-color: rgb(13, 59, 4);
+    } 
+    45% {
+        background-color: rgb(13, 59, 4);  
+    }
+   
+    63% {
+        background-color: rgb(46, 218, 12);  
+    }
+    72% {
+        background-color: rgb(46, 218, 12);
+    }
+    75% {
+        background-color: rgb(13, 59, 4);
+    }
+    100% {
+        background-color: rgb(13, 59, 4);
+    }
+}
+
+@keyframes sequencefeuorange2{
+    0% {
+        background-color: rgb(58, 44, 4);
+    }
+    20% {
+        background-color: rgb(58, 44, 4);
+    } 
+    30% {
+        background-color: rgb(58, 44, 4);
+    } 
+    50% {
+        background-color: rgb(58, 44, 4);
+    }
+    75% {
+        background-color: rgb(58, 44, 4);
+    }
+    90% {
+        background-color:rgb(243, 182, 16);
+    }
+    100% {
+        background-color: rgb(13, 59, 4);
+    }
+}
+
+@keyframes sequencefeurouge2 {
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: red;
+    } 
+    30% {
+        background-color: red;
+    } 
+    40% {
+        background-color: red;
+    }
+    70% {
+        background-color: rgb(61, 8, 8);
+    }
+    90% {
+        background-color:rgb(61, 8, 8);
+    }
+    100% {
+        background-color: red;
+    }
+}
+
