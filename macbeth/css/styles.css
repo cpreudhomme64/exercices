@@ -1,0 +1,48 @@
+body{
+	height: 100%;
+	margin: 0;
+	padding:0;
+}
+header {
+	height: 100%;
+	text-align: center;
+	color: white;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	height: 70vh;
+	overflow-y: auto;
+	background-color: white;
+	padding: 20px;
+	margin: 5%;
+	
+}
+
+article {
+	flex: 35%;
+	max-width: 500vh;
+	font: verdana;
+}
+
+html{
+	background-color: #3E0303;
+}
+
+
+blockquote {
+	color: #A1A5A9;
+	font-size: 22px;
+	padding:50px;
+}
+
+blockquote:before {
+      content: "#";
+ }
+
+blockquote:after {
+      content: "#";
+ }
+
+
