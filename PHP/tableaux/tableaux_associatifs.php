@@ -15,15 +15,30 @@ $activites = array("Lundi"=>"Php","Mardi"=>"Javascript", "Mercredi"=>"Typescript
 $pierre = array("1"=>"Php","2"=>"Javascript","3"=>"Python");
 $paul = array("1"=>"Javascript","2"=>"Css","3"=>"Php");
 $jacques = array("1"=>"Java","2"=>"Php","3"=>"Javascript");
-$preferences = array();
+
 
 
 var_dump($activites);
 var_dump($pierre);
 
 // modify activity of sunday
-$activités = array_splice($activités, -1, 1, array("Dormir"));
+$activites["Dimanche"] = "Dormir";
 var_dump($activites);
+
+//
+// $preferences = array();
+$preferences = array_merge($pierre, $paul, $jacques);
+var_dump($preferences);
+
+$occurence = array_count_values($preferences);
+arsort($occurence);
+var_dump($occurence);
+
+
+
+
+
+
 
 ?>
 
