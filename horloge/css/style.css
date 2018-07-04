@@ -1,0 +1,164 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    background-color: rgb(53, 52, 52);
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#horloge {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    top: 100px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: rgb(240, 37, 223);
+    border-radius: 50%;
+}
+
+#horloge:before{
+
+}
+
+#center{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 295px;
+    left: 295px;
+}
+
+.chiffre {
+position: absolute;
+top: 70px;
+left: 150px;
+transform-origin: bottom 100%;
+}
+
+
+#trotteuse {
+    height: 240px;
+    width: 2px;
+    background-color: rgb(44, 231, 222);
+    position: absolute;
+    top: 65px;
+    left: 305px;
+    transform-origin: 50% 100%;
+}
+
+#minute {
+    height: 250px;
+    width: 5px;
+    background-color: white;
+    position: absolute;
+    top: 53px;
+    left: 302px;
+    transform-origin: 50% 100%;
+
+}
+
+#heure {
+    height: 180px;
+    width: 6px;
+    background-color: white;
+    position: absolute;
+    top: 125px;
+    left: 302px;
+    transform-origin: 50% 100%;
+}
+
+.chiffre{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: black;
+    top: 285px;
+    left: 285px;
+}
+
+#douze{
+    transform: translate(0px, -270px);
+}
+#un{
+    transform: rotate(30deg) translate(0px, -270px);
+}
+#deux{
+    transform: rotate(60deg) translate(0px, -270px);
+}
+#trois{
+    transform: rotate(90deg) translate(0px, -270px);
+}
+#quatre{
+    transform: rotate(120deg) translate(0px, -270px);
+}
+#cinq{
+    transform: rotate(150deg) translate(0px, -270px);
+}
+#six{
+    transform: rotate(180deg) translate(0px, -270px);
+}
+#sept{
+    transform: rotate(210deg) translate(0px, -270px);
+}
+#huit{
+    transform: rotate(240deg) translate(0px, -270px);
+}
+#neuf{
+    transform: rotate(270deg) translate(0px, -270px);
+}
+#dix{
+    transform: rotate(300deg) translate(0px, -270px);
+}
+#onze{
+    transform: rotate(330deg) translate(0px, -270px);
+}
+
+
+ @-webkit-keyframes tour{
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-o-keyframes tour{
+    from{
+        -o-transform: rotate(0deg);
+    }
+    to{
+        -o-transform: rotate(360deg);
+    }
+}
+@keyframes tour{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} 
+
+ #trotteuse{
+    animation: tour 60s steps(60, end) infinite;
+
+}
+
+#minute{
+    animation: tour 3600s steps(60, end) infinite;
+
+}
+#heure{
+    animation: tour 43200s linear infinite;
+
+}
+
