@@ -1,0 +1,33 @@
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(18, 13, 41);
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ section {
+    flex: 35%;
+    border: solid;
+    color: white;
+    display: flex;
+
+ }
+ article {
+    margin: auto;
+ }
+
+ #titre {
+    display: block;
+    font-size: 2em;
+    color: White;
+ }
+
+
+
