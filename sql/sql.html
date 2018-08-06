@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <article>
+        <p>
+
+            <h1>REQUETES SQL Tous les chapitres avec tous les champs.</h1>
+        
+            <br>
+            <br> SELECT * FROM `chapitre`
+            <br>
+            <br> Le chapitre d'"id_chapitre" 3 avec tous les champs.
+            <br> SELECT * FROM `chapitre` WHERE id_chapitre=3
+            <br>
+            <br> Tous les chapitres avec uniquement le champ "titre".
+            <br> SELECT `titre` FROM `chapitre`
+            <br>
+            <br> Tous les chapitres avec les champs "titre" et "texte".
+            <br> SELECT `titre`, `texte` FROM `chapitre`
+            <br>
+            <br> Tous les chapitres avec les champs "titre" et "texte" ordonnés par "id_chapitre" croissant (ORDER BY).
+            <br> SELECT `titre`, `texte` FROM `chapitre` ORDER BY id_chapitre
+            <br>
+            <br> Tous les chapitres avec les champs "titre" et "texte" ordonnés par "id_chapitre" décroissant.
+            <br> SELECT `titre`, `texte` FROM `chapitre` ORDER BY id_chapitre DESC
+            <br>
+            <br> Le chapitre d'"id_chapitre" 3 ainsi que le chapitre d'"id_chapitre" 4 avec tous les champs.
+            <br> SELECT `id_chapitre`, `titre`, `texte` FROM `chapitre` WHERE id_chapitre IN (3,4)
+            <br>
+            <br> Les chapitres dont le titre contient le mot "Chapitre" (LIKE).
+            <br> SELECT `titre` FROM `chapitre` WHERE `titre` LIKE '%Chapitre%'
+            <br>
+            <br> Les chapitres dont le titre ne contient pas le mot "Chapitre".
+            <br> SELECT `titre` FROM `chapitre` WHERE `titre` NOT LIKE '%Chapitre%'
+            <br>
+            <br> (SELECT * FROM `chapitre` ORDER BY ordre)
+            <br> --------------------------------------------- Liste des chapitres (titre) et auteur (nom,prénom) par ordre croissant
+            (champ ordre).
+            <br> SELECT titre, auteur FROM `chapitre` ORDER BY ordre
+            <br>
+            <br> Nombre de chapitres total (COUNT).
+            <br> SELECT COUNT(id_chapitre) FROM chapitre
+            <br>
+            <br> Nombre de chapitres rédigés par Pierre Durand.
+            <br> SELECT COUNT(auteur) FROM chapitre WHERE `auteur` LIKE '%Durand%'
+            <br>
+            <br> Nombre de chapitres rédigés par chacun des rédacteurs, dans l'ordre croissant du nombre de chapitres (elle est
+            costaud celle-là...).
+            <br> SELECT auteur,COUNT(auteur) FROM `chapitre` GROUP BY auteur DESC
+            <br>
+            <br> ---------------------------------- Le total des notes obtenues par Paul Dupont (SUM).
+            <br> SELECT auteur, SUM(note) FROM `chapitre` WHERE `auteur` LIKE '%Dupont%' GROUP BY `auteur`
+            <br>
+            <br> Le palmares (classement) des rédacteurs en fonction des notes obtenues pour les chapitres qu'ils ont écrits
+            (GROUP BY).
+            <br> SELECT auteur, SUM(note) FROM `chapitre` GROUP BY auteur DESC
+            <br>
+            <br> Même chose que précedemment mais uniquement pour les rédacteurs totalisant au moins 5 points (HAVING).
+            <br> SELECT auteur, SUM(note) FROM `chapitre` GROUP BY auteur HAVING SUM(note) > 5
+            <br>
+            <br>
+
+
+
+
+
+
+        </p>
+
+
+
+
+
+
+
+    </article>
+
+
+
+
+
+</body>
+
+</html>
