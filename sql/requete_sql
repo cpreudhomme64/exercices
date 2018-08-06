@@ -1,0 +1,62 @@
+
+    Tous les chapitres avec tous les champs.
+    SELECT * FROM `chapitre`     
+    
+    Le chapitre d'"id_chapitre" 3 avec tous les champs.
+    SELECT * FROM `chapitre` WHERE id_chapitre=3
+    
+    
+    Tous les chapitres avec uniquement le champ "titre".
+    SELECT `titre` FROM `chapitre`
+    
+    Tous les chapitres avec les champs "titre" et "texte".
+    SELECT `titre`, `texte` FROM `chapitre`
+    
+    Tous les chapitres avec les champs "titre" et "texte" ordonnés par "id_chapitre" croissant (ORDER BY).
+    SELECT `titre`, `texte` FROM `chapitre` ORDER BY id_chapitre
+    
+    Tous les chapitres avec les champs "titre" et "texte" ordonnés par "id_chapitre" décroissant.
+    SELECT `titre`, `texte` FROM `chapitre` ORDER BY id_chapitre DESC
+
+    
+    Le chapitre d'"id_chapitre" 3 ainsi que le chapitre d'"id_chapitre" 4 avec tous les champs.
+    SELECT `id_chapitre`, `titre`, `texte` FROM `chapitre` WHERE id_chapitre IN (3,4)
+    
+    Les chapitres dont le titre contient le mot "Chapitre" (LIKE).
+    SELECT `titre` FROM `chapitre` WHERE `titre` LIKE '%Chapitre%'
+    
+    Les chapitres dont le titre ne contient pas le mot "Chapitre".
+    SELECT `titre` FROM `chapitre` WHERE `titre` NOT LIKE '%Chapitre%'
+    
+    
+    (SELECT * FROM `chapitre` ORDER BY ordre)
+    
+    
+    
+    
+    Liste des chapitres (titre) et auteur (nom,prénom) par ordre croissant (champ ordre).
+    SELECT titre, auteur FROM `chapitre` ORDER BY ordre
+    
+    Nombre de chapitres total (COUNT).
+    SELECT COUNT(id_chapitre) FROM chapitre
+    
+    Nombre de chapitres rédigés par Pierre Durand.
+    SELECT COUNT(auteur) FROM chapitre WHERE `auteur` LIKE '%Durand%'
+    
+    Nombre de chapitres rédigés par chacun des rédacteurs, dans l'ordre croissant du nombre de chapitres (elle est costaud celle-là...).
+    SELECT auteur,COUNT(auteur) FROM `chapitre` GROUP BY auteur DESC
+    
+    
+    
+    Le total des notes obtenues par Paul Dupont (SUM).
+    SELECT auteur, SUM(note) FROM `chapitre` WHERE `auteur` LIKE '%Dupont%' GROUP BY `auteur`
+    
+    
+    Le palmares (classement) des rédacteurs en fonction des notes obtenues pour les chapitres qu'ils ont écrits (GROUP BY).
+    SELECT auteur, SUM(note) FROM `chapitre` GROUP BY auteur DESC
+    
+    
+    Même chose que précedemment mais uniquement pour les rédacteurs totalisant au moins 5 points (HAVING).
+	SELECT auteur, SUM(note) FROM `chapitre` GROUP BY auteur HAVING  SUM(note) > 5 
+    
+    
